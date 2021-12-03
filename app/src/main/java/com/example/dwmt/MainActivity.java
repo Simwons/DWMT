@@ -45,4 +45,6 @@ public class MainActivity extends AppCompatActivity {
         gameIntent.putExtra("answerType", data.getIntExtra("answerType", 1));
         gameIntent.putExtra("checkType", data.getIntExtra("checkType", 1));
     }
+
+
 }
