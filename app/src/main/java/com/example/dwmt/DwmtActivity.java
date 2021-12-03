@@ -14,6 +14,7 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class DwmtActivity extends AppCompatActivity {
 
@@ -113,7 +114,7 @@ public class DwmtActivity extends AppCompatActivity {
             public void run() {
                 if (metronome.getCnt() > 0) {
                     metronome.play();
-                    handler.postDelayed(this, 500);
+                    handler.postDelayed(this, 1000+(new Random().nextInt(4000)));
                 }
                 else{                                       // 게임 종료
                     for (int i=0; i<4; i++)
